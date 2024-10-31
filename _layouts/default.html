@@ -7,6 +7,15 @@
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 <body>
+  <nav class="navbar">
+    <ul class="nav-list">
+      <li><a href="{{ '/' | relative_url }}">Home</a></li>
+      <li><a href="{{ '/about' | relative_url }}">About</a></li>
+      <li><a href="{{ '/journal' | relative_url }}">Build Journal</a></li>
+      <li><a href="{{ '/custom-shop' | relative_url }}">Custom Shop</a></li>
+      <li><a href="{{ '/contact' | relative_url }}">Contact</a></li>
+    </ul>
+  </nav>  
   {{ content }}
 </body>
 </html>
