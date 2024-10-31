@@ -1,6 +1,6 @@
 /* General Styling */
 body {
-  font-family: 'Great Vibes', cursive;
+  font-family: 'Roboto', sans-serif;
   color: #333;
   margin: 0;
   padding: 0;
@@ -29,7 +29,7 @@ body {
 .nav-list a {
   color: #f4f1ea;
   text-decoration: none;
-  font-family: 'Great Vibes', cursive;
+  font-family: 'Roboto', sans-serif;
   font-size: 1.1rem;
   transition: color 0.3s;
 }
@@ -48,7 +48,8 @@ body {
 
 .hero h1 {
   font-size: 3rem;
-  font-family: 'Great Vibes', cursive;
+  font-family: 'Permanent Marker', cursive;
+  font-weight: 400;
 }
 
 .intro {
