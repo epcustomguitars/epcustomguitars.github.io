@@ -5,11 +5,12 @@ body {
   color: #333;
 }
 
-.hero {
+.hero, .intro {
   text-align: center;
   background-color: #2f2f2f;
   color: #f4f1ea;
-  padding: 2rem;
+  padding: 1rem;
+  text-align: center;
 }
 
 .hero h1 {
@@ -17,10 +18,9 @@ body {
   font-family: 'Playfair Display', serif;
 }
 
-.intro {
-  margin: 2rem auto;
-  max-width: 800px;
-  text-align: center;
+.hero p, .intro p {
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
 button {
@@ -122,4 +122,61 @@ hr {
   margin-top: 0.5rem;
   font-family: 'Playfair Display', serif;
   color: #333;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  /* Navbar adjustments */
+  .navbar {
+    padding: 0.5rem;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-list li {
+    margin: 0.5rem 0;
+  }
+
+  /* Font size adjustments */
+  h1, .hero h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  p, .nav-list a {
+    font-size: 1rem;
+  }
+
+  /* Gallery adjustments */
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-item {
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+
+  .gallery-item img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* General responsive image settings */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Container adjustments */
+.container, .intro, .posts {
+  padding: 0 1rem;
 }
