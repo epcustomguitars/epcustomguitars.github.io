@@ -36,6 +36,9 @@ button {
   background-color: #2f2f2f;
   padding: 1rem;
   text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0;  /* Remove padding to prevent overflow */
 }
 
 .nav-list {
@@ -44,10 +47,11 @@ button {
   padding: 0;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .nav-list li {
-  margin: 0 1rem;
+  margin: 0.5rem;
 }
 
 .nav-list a {
@@ -128,16 +132,21 @@ hr {
 @media (max-width: 768px) {
   /* Navbar adjustments */
   .navbar {
-    padding: 0.5rem;
+    width: 100vw; /* Ensure it takes up the full viewport width */
   }
 
   .nav-list {
-    flex-direction: column;
+    flex-direction: column; /* Stack menu items vertically on smaller screens */
     align-items: center;
   }
 
   .nav-list li {
     margin: 0.5rem 0;
+  }
+
+  .nav-list a {
+    font-size: 1rem; /* Adjust font size for better fit */
+    padding: 0.5rem;
   }
 
   /* Font size adjustments */
