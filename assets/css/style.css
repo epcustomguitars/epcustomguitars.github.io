@@ -1,6 +1,6 @@
 /* General Styling */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Great Vibes', cursive;
   color: #333;
   margin: 0;
   padding: 0;
@@ -29,7 +29,7 @@ body {
 .nav-list a {
   color: #f4f1ea;
   text-decoration: none;
-  font-family: 'Pacifico', cursive;
+  font-family: 'Great Vibes', cursive;
   font-size: 1.1rem;
   transition: color 0.3s;
 }
@@ -48,7 +48,7 @@ body {
 
 .hero h1 {
   font-size: 3rem;
-  font-family: 'Pacifico', cursive;
+  font-family: 'Great Vibes', cursive;
 }
 
 .intro {
